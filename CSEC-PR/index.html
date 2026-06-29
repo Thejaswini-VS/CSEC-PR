@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The CSE-C PR Wall</title>
+  
+  <!-- External stylesheet linking -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Physics and Simulation logic script -->
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+  <!-- Top Navigation/Header -->
+  <header>
+    <div class="header-logo">
+      <!-- Minimalist GitHub Logo Icon -->
+      <svg height="28" viewBox="0 0 16 16" version="1.1" width="28">
+        <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+      </svg>
+      <div class="header-title">
+        <h1>The CSE-C PR Contributor Wall</h1>
+        <p>Learn GitHub by adding your code block directly in the HTML file!</p>
+      </div>
+    </div>
+    
+    <!-- Simple counter dashboard -->
+    <div class="contributions-counter">
+      <span>Total Contributions:</span>
+      <strong id="contributions-count">0</strong>
+    </div>
+  </header>
+
+  <!-- Live interactive workspace space -->
+  <main class="visualization-space" id="visualization-space">
+    
+    <!-- Toast notifications for simulated PR merges -->
+    <div class="pr-simulation-panel" id="pr-notification-panel"></div>
+
+    <!-- 
+      ========================================================================
+      BEGINNER CORNER: ADD YOUR CONTRIBUTION BUBBLE CODE BELOW!
+      
+      To add yourself, copy one of the blocks below, change the name (name),
+      change the description (desc), and pick a color class from: 
+      - blue
+      - green
+      - purple
+      - red
+      - orange
+      
+      Example:
+      <div class="bubble blue">
+        <div class="bubble-name">your_name</div>
+        <div class="bubble-desc">Fixed typo in README and updated styles!</div>
+      </div>
+      ========================================================================
+    -->
+    <div id="bubble-container">
+      
+      <div class="bubble blue">
+        <div class="bubble-name">Thejaswini</div>
+        <div class="bubble-desc">I don't know what to say</div>
+      </div>
+
+      <div class="bubble orange">
+        <div class="bubble-name">Thejaswini</div>
+        <div class="bubble-desc">I don't know what to say</div>
+      </div>
+
+    </div>
+
+    <!-- Interactive hover tip -->
+    <div class="instruction-hint">
+      Drag bubbles to play with physics | Click a bubble to view detailed commit
+    </div>
+
+  </main>
+
+  <!-- Contributor Details Modal -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-titles">
+          <div class="modal-name" id="modal-name">@octocat</div>
+          <div class="modal-handle">PR Contributor</div>
+        </div>
+        <button class="btn-close-modal" id="btn-close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-desc-box">
+          <div class="modal-desc-title">Contribution Log</div>
+          <div class="modal-desc" id="modal-desc">Description log goes here.</div>
+        </div>
+        <div class="modal-meta-grid">
+          <div class="modal-meta-item">
+            <span class="modal-meta-label">Commit Hash</span>
+            <span class="modal-meta-value" id="modal-hash">a8f9c0e</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-done" id="btn-done">Close Details</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
